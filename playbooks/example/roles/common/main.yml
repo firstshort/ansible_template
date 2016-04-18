@@ -16,10 +16,10 @@
 # This is optional, but effectively prevents the installation of i386 packages. 
 # Handy when you have an amd64-only local apt mirror.
 
-#  - name: Remove i386 architecture
-#    shell: dpkg --remove-architecture i386
-#    when: ansible_distribution_release == "saucy"
-#    tags: firstrun
+  - name: Remove i386 architecture
+    shell: dpkg --remove-architecture i386
+    when: ansible_distribution_release == "saucy"
+    tags: firstrun
 
 # This is very useful.  Basically translates to "run apt-get update" on the target
   - name: Regenerate apt-cache

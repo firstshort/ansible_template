@@ -1,7 +1,8 @@
-[demoboxes]
+[lb]
 # example of setting a host inventory by IP address.
 # also demonstrates how to set per-host variables.
-192.168.1.97 remote_user=tom access_user=tom 
+10.0.15.11 set_hostname=lb remote_user=vagrant access_user=vagrant 
+#192.168.1.97 remote_user=tom access_user=tom 
 
 #[repository_servers]
 #example-repository
